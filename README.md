@@ -82,24 +82,29 @@ Následně jsem pokračoval vytvořením pěti sad SQL nad tabulkou t_Tomas_Fuxa
 ## VÝSLEDKY
 
 Vytvořeno 7 sad SQL:
-•	CREATE_TABLE_t_Tomas_Fuxa_project_SQL_primary_final
-•	CREATE_TABLE_t_Tomas_Fuxa_project_SQL_secondary_final
-•	Tomas_Fuxa_project_SQL_answer_to_question_1
-•	Tomas_Fuxa_project_SQL_answer_to_question_2
-•	Tomas_Fuxa_project_SQL_answer_to_question_3
-•	Tomas_Fuxa_project_SQL_answer_to_question_4
-•	Tomas_Fuxa_project_SQL_answer_to_question_5
+- CREATE_TABLE_t_Tomas_Fuxa_project_SQL_primary_final
+- CREATE_TABLE_t_Tomas_Fuxa_project_SQL_secondary_final
+- Tomas_Fuxa_project_SQL_answer_to_question_1
+- Tomas_Fuxa_project_SQL_answer_to_question_2
+- Tomas_Fuxa_project_SQL_answer_to_question_3
+- Tomas_Fuxa_project_SQL_answer_to_question_4
+- Tomas_Fuxa_project_SQL_answer_to_question_5
+
 Odpovědi na výzkumné otázky:
+
 1.	Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 Odpověď: V prvním selectu se přehled aktuálních a předchozích průměrných mezd za jednotlivá odvětví mezi roky 2006 a 2018. Podle posledního sloupce difference lze určit, zdali meziročně docházelo k nárůstu nebo poklesu průměrné mzdy. 
 V druhém selectu je poté výstup těch odvětví, u kterých alespoň v jednom roce mzdy meziročně klesaly (celkem 16 odvětví). Ve zbývajících třech odvětvích (C, Q, S) mzdy tedy nezaznamenaly žádný pokles a meziročně vždy stoupaly.
+
 2.	Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 Odpověď: Srovnatelné období je za roky 2006 až 2018, tedy první srovnatelný rok je 2006 a poslední srovnatelný rok je 2018. V roce 2006 bylo možné za průměrnou mzdu koupit 1466 litrů mléka a 1313 kilogramů chleba. V roce 2018 pak bylo možné za průměrnou mzdu koupit 1670 litrů mléka a 1365 kilogramů chleba. 
+
 3.	Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší procentuální meziroční nárůst)?
 Odpověď: Nejnižší průměrné procentuální meziroční nárůsty ceny byly v letech 2006 až 2018 u produktu Cukr krystalový, který průměrně za celé období zlevňoval o 1,92 %. Mezi prvním měřeným rokem a posledním měřeným rokem je celkový pokles ceny o 27,5 %.
 
 4.	Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
 Odpověď: Ne, jelikož největší meziroční rozdíl mezi nárůstem cen potravin a nárůstem mezd byl v roce 2013 a činil 6,66 %.
+
 5.	Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
 Odpověď: Pro zjištění vlivu výšky HDP na změny ve mzdách a cenách potravin jsem vytvořil tabulku, kde je pro jednotlivé roky vidět procentuální meziroční změna cen, mezd i HDP.
 Při porovnání třech největších nárůstů HDP (rok 2007 – meziroční nárůst 5,57 %; rok 2015 – meziroční nárůst 5,39 %; rok 2017 – meziroční nárůst 5,17 %) nelze jednoznačně říci, že tyto nárůsty vždy výrazně ovlivnily mzdy nebo ceny v daném nebo následujících roce. V letech 2007 a 2017 je sice viditelné, že s nárůstem HDP výrazně vzrostli ceny a mzdy v daném roce, ale v roce následujícím došlo v obou letech k výraznému zvýšení pouze u mezd a výrazné zvýšení cen se projevilo jen v roce 2008 nikoliv však v roce 2018. Dále pak druhý největší nárůst HDP (v roce 2015) doprovází naopak snížení cen v daném i následujícím roce a pouze mírný nárůst mezd v daném i následujícím roce.
