@@ -80,16 +80,15 @@ Hodnota korelačního koeficientu 0,4 naznačuje spíše střední míru lineár
 
 V další fázi projektu jsem vytvořil požadované tabulky:
 
-t_Tomas_Fuxa_project_SQL_primary_final (pro data mezd a cen potravin za Českou republiku sjednocených na totožné porovnatelné období – společné roky)
+- t_Tomas_Fuxa_project_SQL_primary_final (pro data mezd a cen potravin za Českou republiku sjednocených na totožné porovnatelné období – společné roky)
 
--	Tabulku jsem vytvořil pomocí Common Table Expression (CTE) spojením všech základních dat vycházejících z analýzy pěti výzkumných otázek.
+Tabulku jsem vytvořil pomocí Common Table Expression (CTE) spojením všech základních dat vycházejících z analýzy pěti výzkumných otázek.
   
-t_ Tomas_Fuxa_project_SQL_secondary_final (pro dodatečná data o dalších evropských státech)
+- t_ Tomas_Fuxa_project_SQL_secondary_final (pro dodatečná data o dalších evropských státech)
 
--	Tabulku jsem vytvořil pomocí spojením (JOIN) dvou dodatečných tabulek:
-  
-countries - Všemožné informace o zemích na světě, například hlavní město, měna, národní jídlo nebo průměrná výška populace.
-economies - HDP, GINI, daňová zátěž, atd. pro daný stát a rok
+Tabulku jsem vytvořil pomocí spojením (JOIN) dvou dodatečných tabulek:
+ - countries - Všemožné informace o zemích na světě, například hlavní město, měna, národní jídlo nebo průměrná výška populace
+ - economies - HDP, GINI, daňová zátěž, atd. pro daný stát a rok
 
 Zadní explicitně neříká, jaký má být rozsah sloupců či filtrů této tabulky, rozsah jsem tedy stanovil maximální dle výchozích tabulek „countries“ a „economies“ a obsah jsem omezil pouze na všechny státy, kde je hodnota sloupce continent = 'Europe', jelikož zadání říká, že tabulka má sloužit „pro dodatečná data o dalších evropských státech“.
 Následně jsem pokračoval vytvořením pěti sad SQL nad tabulkou t_Tomas_Fuxa_project_SQL_primary_final a t_Tomas_Fuxa_project_SQL_secondary_final, jejichž výsledky ukazují odpovědi na jednotlivé výzkumné otázky.
